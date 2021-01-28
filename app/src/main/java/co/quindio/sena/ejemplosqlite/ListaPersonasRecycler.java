@@ -48,9 +48,11 @@ public class ListaPersonasRecycler extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(),
                         "Seleccion: "+listaUsuario.get(recyclerViewUsuarios.getChildAdapterPosition(v)).getId(),Toast.LENGTH_SHORT).show();
+                 String idReal = listaUsuario.get(recyclerViewUsuarios.getChildAdapterPosition(v)).getId().toString();
+                 id.setText(idReal);
+               // id.setText();
 
-                id.setText("56");
-                //id.setText((CharSequence) listaUsuario.get(recyclerViewUsuarios.getChildAdapterPosition(v)));
+                //id.setText((CharSequence) listaUsuario.get(recyclerViewUsuarios.getChildAdapterPosition(v)).getId();
                 // id.setText(listaUsuario.get(recyclerViewUsuarios.getChildAdapterPosition(v)).getId());
       mostrardialogo(v);
 
