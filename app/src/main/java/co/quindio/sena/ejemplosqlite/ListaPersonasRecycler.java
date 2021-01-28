@@ -56,6 +56,8 @@ public class ListaPersonasRecycler extends AppCompatActivity {
                 // id.setText(listaUsuario.get(recyclerViewUsuarios.getChildAdapterPosition(v)).getId());
       mostrardialogo(v);
 
+
+
             }
         });
         recyclerViewUsuarios.setAdapter(adapter);
@@ -77,6 +79,8 @@ public class ListaPersonasRecycler extends AppCompatActivity {
                         id.setText("");
                         //limpiar();
                         db.close();
+                        finish();
+                        startActivity(getIntent());
                     }
                 })
                 .setNegativeButton("No", new DialogInterface.OnClickListener() {
