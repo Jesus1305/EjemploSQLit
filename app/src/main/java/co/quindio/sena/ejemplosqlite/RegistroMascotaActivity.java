@@ -11,7 +11,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -110,11 +109,11 @@ public class RegistroMascotaActivity extends AppCompatActivity {
             persona=new Usuario();
             persona.setId(cursor.getInt(0));
             persona.setNombre(cursor.getString(1));
-            persona.setTelefono(cursor.getString(2));
+            persona.setTotal(cursor.getString(2));
 
             Log.i("id",persona.getId().toString());
             Log.i("Nombre",persona.getNombre());
-            Log.i("Tel",persona.getTelefono());
+            Log.i("Tel",persona.getTotal());
 
             personasList.add(persona);
 

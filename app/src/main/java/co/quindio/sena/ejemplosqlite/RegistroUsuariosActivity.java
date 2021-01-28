@@ -12,7 +12,8 @@ import co.quindio.sena.ejemplosqlite.utilidades.Utilidades;
 
 public class RegistroUsuariosActivity extends AppCompatActivity {
 
-    EditText campoId,campoNombre,campoTelefono;
+
+    EditText campoId,campoNombre, campoTotal, campoSize, campoCantidad, campoExtra, campoComentarios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,11 @@ public class RegistroUsuariosActivity extends AppCompatActivity {
 
         campoId= (EditText) findViewById(R.id.campoId);
         campoNombre= (EditText) findViewById(R.id.campoNombre);
-        campoTelefono= (EditText) findViewById(R.id.campoTelefono);
+        campoCantidad= (EditText) findViewById(R.id.campoCantidad);
+        campoComentarios= (EditText) findViewById(R.id.campoComentarios);
+        campoExtra= (EditText) findViewById(R.id.campoExtra);
+        campoSize= (EditText) findViewById(R.id.campoSize);
+        campoTotal= (EditText) findViewById(R.id.campoTotal);
 
     }
 
@@ -38,9 +43,9 @@ public class RegistroUsuariosActivity extends AppCompatActivity {
         //insert into usuario (id,nombre,telefono) values (123,'Cristian','85665223')
 
         String insert="INSERT INTO "+Utilidades.TABLA_USUARIO
-                +" ( " +Utilidades.CAMPO_ID+","+Utilidades.CAMPO_NOMBRE+","+Utilidades.CAMPO_TELEFONO+")" +
+                +" ( " +Utilidades.CAMPO_ID+","+Utilidades.CAMPO_NOMBRE+","+Utilidades.CAMPO_TOTAL+")" +
                 " VALUES ("+campoId.getText().toString()+", '"+campoNombre.getText().toString()+"','"
-                +campoTelefono.getText().toString()+"')";
+                +campoTotal.getText().toString()+"')";
 
         db.execSQL(insert);
 
@@ -57,7 +62,13 @@ public class RegistroUsuariosActivity extends AppCompatActivity {
         ContentValues values=new ContentValues();
         values.put(Utilidades.CAMPO_ID,campoId.getText().toString());
         values.put(Utilidades.CAMPO_NOMBRE,campoNombre.getText().toString());
-        values.put(Utilidades.CAMPO_TELEFONO,campoTelefono.getText().toString());
+        values.put(Utilidades.CAMPO_CANTIDAD,campoCantidad.getText().toString());
+        values.put(Utilidades.CAMPO_COMENTARIO ,campoComentarios.getText().toString());
+        values.put(Utilidades.CAMPO_EXTRA,campoExtra.getText().toString());
+        values.put(Utilidades.CAMPO_SIZE,campoSize.getText().toString());
+        values.put(Utilidades.CAMPO_TOTAL,campoTotal .getText().toString());
+
+
 
         Long idResultante=db.insert(Utilidades.TABLA_USUARIO,Utilidades.CAMPO_ID,values);
 

@@ -10,11 +10,17 @@ public class Utilidades {
     public static final String TABLA_USUARIO="usuario";
     public static final String CAMPO_ID="id";
     public static final String CAMPO_NOMBRE="nombre";
-    public static final String CAMPO_TELEFONO="telefono";
+    //public static final String CAMPO_TELEFONO="telefono";
+    public static final String CAMPO_TOTAL="total";
+    public static final String CAMPO_SIZE="size";
+    public static final String CAMPO_CANTIDAD="cantidad";
+    public static final String CAMPO_EXTRA="extra";
+    public static final String CAMPO_COMENTARIO="comentario";
+
 
     public static final String CREAR_TABLA_USUARIO="CREATE TABLE " +
             ""+TABLA_USUARIO+" ("+CAMPO_ID+" " +
-            "INTEGER, "+CAMPO_NOMBRE+" TEXT,"+CAMPO_TELEFONO+" TEXT)";
+            "INTEGER, "+CAMPO_NOMBRE+" TEXT,"+CAMPO_TOTAL+" TEXT,"+CAMPO_SIZE+" TEXT,"+CAMPO_CANTIDAD+" TEXT,"+CAMPO_EXTRA+" TEXT,"+CAMPO_COMENTARIO+" TEXT)";
 
     //Constantes campos tabla mascota
     public static final String TABLA_MASCOTA="mascota";

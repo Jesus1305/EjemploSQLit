@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EjemploSQLit.iml" filepath="$PROJECT_DIR$/.idea/modules/EjemploSQLit.iml" group="EjemploSQLit" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EjemploSQLit-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EjemploSQLit-app.iml" group="EjemploSQLit/app" />
       <module fileurl="file://$PROJECT_DIR$/EjemploSQLite.iml" filepath="$PROJECT_DIR$/EjemploSQLite.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

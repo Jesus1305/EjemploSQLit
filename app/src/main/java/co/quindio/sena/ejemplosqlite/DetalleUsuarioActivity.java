@@ -2,7 +2,6 @@ package co.quindio.sena.ejemplosqlite;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 
 import co.quindio.sena.ejemplosqlite.entidades.Usuario;
@@ -27,7 +26,7 @@ public class DetalleUsuarioActivity extends AppCompatActivity {
             user= (Usuario) objetoEnviado.getSerializable("usuario");
             campoId.setText(user.getId().toString());
             campoNombre.setText(user.getNombre().toString());
-            campoTelefono.setText(user.getTelefono().toString());
+            campoTelefono.setText(user.getTotal().toString());
 
         }
 

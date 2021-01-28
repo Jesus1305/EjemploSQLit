@@ -18,11 +18,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Documento:"
+                android:text="ID:"
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/textDocumento"
+                android:id="@+id/textId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1094899"
@@ -38,11 +38,71 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nombre:"
+                android:text="Platillo"
                 android:textStyle="bold"/>
 
             <TextView
                 android:id="@+id/textNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hamburgesa"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tamano:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1094899"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1094899"
+            android:layout_marginLeft="10dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrediente extra:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textExtra"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Cristian David Henao"
@@ -58,11 +118,30 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Telefono:"
+                android:text="Comentarios:"
                 android:textStyle="bold"/>
 
             <TextView
-                android:id="@+id/textTelefono"
+                android:id="@+id/textComentarios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="311358639"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total:"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textTotal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="311358639"

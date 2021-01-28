@@ -48,7 +48,7 @@ public class DetalleMascotaActivity extends AppCompatActivity {
     private void consultarPersona(Integer idPersona) {
         SQLiteDatabase db=conn.getReadableDatabase();
         String[] parametros={idPersona.toString()};
-        String[] campos={Utilidades.CAMPO_NOMBRE,Utilidades.CAMPO_TELEFONO};
+        String[] campos={Utilidades.CAMPO_NOMBRE,Utilidades.CAMPO_TOTAL};
         Toast.makeText(getApplicationContext(),"El documento "+idPersona,Toast.LENGTH_LONG).show();
         try {
             Cursor cursor =db.query(Utilidades.TABLA_USUARIO,campos,Utilidades.CAMPO_ID+"=?",parametros,null,null,null);

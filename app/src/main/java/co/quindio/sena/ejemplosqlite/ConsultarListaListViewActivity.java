@@ -5,7 +5,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -44,7 +43,7 @@ public class ConsultarListaListViewActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int pos, long l) {
                 String informacion="id: "+listaUsuarios.get(pos).getId()+"\n";
                 informacion+="Nombre: "+listaUsuarios.get(pos).getNombre()+"\n";
-                informacion+="Telefono: "+listaUsuarios.get(pos).getTelefono()+"\n";
+                informacion+="Telefono: "+listaUsuarios.get(pos).getTotal()+"\n";
 
                 Toast.makeText(getApplicationContext(),informacion,Toast.LENGTH_LONG).show();
 
@@ -75,7 +74,7 @@ public class ConsultarListaListViewActivity extends AppCompatActivity {
             usuario=new Usuario();
             usuario.setId(cursor.getInt(0));
             usuario.setNombre(cursor.getString(1));
-            usuario.setTelefono(cursor.getString(2));
+            usuario.setTotal(cursor.getString(2));
 
             listaUsuarios.add(usuario);
         }

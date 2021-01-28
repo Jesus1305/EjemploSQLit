@@ -10,7 +10,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -53,7 +52,7 @@ public class ConsultaComboActivity extends AppCompatActivity {
                 if (position!=0){
                     txtDocumento.setText(personasList.get(position-1).getId().toString());
                     txtNombre.setText(personasList.get(position-1).getNombre());
-                    txtTelefono.setText(personasList.get(position-1).getTelefono());
+                    txtTelefono.setText(personasList.get(position-1).getTotal());
                 }else{
                     txtDocumento.setText("");
                     txtNombre.setText("");
@@ -83,11 +82,11 @@ public class ConsultaComboActivity extends AppCompatActivity {
             persona=new Usuario();
             persona.setId(cursor.getInt(0));
             persona.setNombre(cursor.getString(1));
-            persona.setTelefono(cursor.getString(2));
+            persona.setTotal(cursor.getString(2));
 
             Log.i("id",persona.getId().toString());
             Log.i("Nombre",persona.getNombre());
-            Log.i("Tel",persona.getTelefono());
+            Log.i("Tel",persona.getTotal());
 
             personasList.add(persona);
 
